@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange"
+    tools:context="com.example.genesissy.coffe.Menu">
+    <RelativeLayout
+        android:id="@+id/image_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/top_image"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_marginTop="80dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/linearLayout2"
+       android:layout_below="@+id/image_top"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/image_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact">
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ente Your Contact"
+            android:textSize="29dp"/>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:textAlignment="center"
+       android:layout_gravity="center"
+        android:id="@+id/Contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tex_choice">
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chose Favourite Coffee"
+            android:textSize="29dp"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/Team_B"
+        android:layout_below="@+id/tex_choice"
+       android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+   </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cup"
+        android:layout_marginTop="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:text="Get Oder"
+        android:textSize="32sp"
+        android:background="#2534"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:onClick="Oder"/>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="EXIT APPLICATION"
+        android:textSize="32sp"
+        android:background="#2534"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Exit"/>
+
+
+</RelativeLayout>
